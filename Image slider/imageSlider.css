@@ -1,0 +1,17 @@
+.imageSlider{
+    width: 100%;
+    margin: auto;
+
+}
+
+.images{
+    width: 50%;
+}
+
+.slides{
+    text-align: center;
+}
+.slideButton{
+    width: 50px;
+    height: 50x;
+}
