@@ -25,8 +25,8 @@ function play(user){
     checkResult(user,computer);
     updateScore();
     console.log(result);
-    displayUserMove.textContent = `Player:${user}`;
-    displayCompMove.textContent = `Computer:${random}`;
+    displayUserMove.textContent = `Player: ${user}`;
+    displayCompMove.textContent = `Computer: ${random}`;
     displayResult.textContent = result;
     displayScoreBoard.textContent = `Wins:${wins} Looses:${looses} score:${score}`
     console.log(`wins = ${wins} looses = ${looses} scores =  ${score}`);
