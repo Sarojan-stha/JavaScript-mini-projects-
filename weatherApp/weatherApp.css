@@ -44,10 +44,23 @@ h1{
     flex-direction: column;
     align-items: center;
     font-weight: bold;
+    border-radius: 5px;
 }
 p{
     margin: 5px;
 }
+
+
 .city,.temp{
     font-size: 3rem;
+}
+.errorDisplay{
+    background-color: red;
+}
+
+.description{
+    font-size: 2rem;
+}
+.emoji{
+    font-size: 9rem;
 }
