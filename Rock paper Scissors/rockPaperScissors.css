@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containeer {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4f83cc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #3a6ca8;
+    transform: scale(1.05);
+}
+
+button#reset {
+    background-color: #e74c3c;
+}
+
+button#reset:hover {
+    background-color: #c0392b;
+}
+
+#userMove,
+#computerMove,
+#result,
+#scoreBoard {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #444;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+#scoreBoard {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
