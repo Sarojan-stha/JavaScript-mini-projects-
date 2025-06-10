@@ -5,6 +5,12 @@ let wins=0;
 let looses=0;
 let score = 0;
 
+const displayResult = document.getElementById("result");
+const displayScoreBoard = document.getElementById("scoreBoard");
+
+const displayUserMove = document.getElementById("userMove");
+const displayCompMove = document.getElementById("computerMove");
+
 const choices = ['rock','paper','scissors'];
 
 function playComputer(){
@@ -19,6 +25,10 @@ function play(user){
     checkResult(user,computer);
     updateScore();
     console.log(result);
+    displayUserMove.textContent = `Player:${user}`;
+    displayCompMove.textContent = `Computer:${random}`;
+    displayResult.textContent = result;
+    displayScoreBoard.textContent = `Wins:${wins} Looses:${looses} score:${score}`
     console.log(`wins = ${wins} looses = ${looses} scores =  ${score}`);
 }
 
@@ -48,6 +58,8 @@ function reset(){
     looses=0;
     score = 0;
     console.log(`wins = ${wins} looses = ${looses} scores =  ${score}`);
+    displayResult.textContent = " ";
+    displayScoreBoard.textContent = `Wins = ${wins} Losses = ${looses} Score = ${score}`;
 
 
 }
