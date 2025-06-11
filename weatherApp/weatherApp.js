@@ -58,6 +58,7 @@ function displayWeatherData(weatherData){
 
     containeer.appendChild(displayCity);
     containeer.appendChild(displayTemp);
+    containeer.appendChild(displayHumidity);
     containeer.appendChild(displayDescription);
     containeer.appendChild(displayEmoji);
 
@@ -70,9 +71,12 @@ function displayWeatherData(weatherData){
 
     displayCity.classList.add("city");
     displayTemp.classList.add("temp");
+    displayHumidity.classList.add("description");
     displayDescription.classList.add("description");
     displayEmoji.classList.add("emoji");
 
+    console.log(description);
+    
 }
 
 function getWeatherEmoji(id){
