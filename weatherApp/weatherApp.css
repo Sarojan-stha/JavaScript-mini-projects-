@@ -1,66 +1,97 @@
-body{
+body {
     margin-top: 50px;
-    background-color: rgb(251, 252, 214);
+    background-color: #fdfde3;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
     padding: 20px;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-form{
+
+form {
     padding: 10px;
 }
 
-.cityInput{
+.cityInput {
     padding: 10px 8px;
-    border: 2px grey solid;
+    border: 2px solid #888;
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: bold;
     max-width: 300px;
     margin-right: 10px;
+    transition: border-color 0.3s ease;
 }
 
-button[type="submit"]{
+.cityInput:focus {
+    border-color: #0baf63;
+    outline: none;
+}
+
+button[type="submit"] {
     padding: 10px 8px;
-    background-color: rgb(11, 175, 99);
-    color: rgb(251, 252, 214);
+    background-color: #0baf63;
+    color: #fdfde3;
+    border: none;
     border-radius: 5px;
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-h1{
+button[type="submit"]:hover {
+    background-color: #088e51;
+}
+
+h1 {
     margin: 0;
 }
-.containeer{
+
+.containeer {
     border: 2px solid black;
     margin-top: 20px;
     width: 300px;
     padding: 30px 0;
-    background: linear-gradient(180deg,rgb(84, 255, 255),green);
+    background: linear-gradient(180deg, #54ffff, #48b948);
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
-p{
+
+.containeer:hover {
+    transform: scale(1.02);
+}
+
+p {
     margin: 5px;
+    text-align: center;
 }
 
-
-.city,.temp{
-    font-size: 3rem;
-}
-.errorDisplay{
-    background-color: red;
+.city, .temp {
+    font-size: 2.8rem;
 }
 
-.description{
-    font-size: 2rem;
+.description {
+    font-size: 1.8rem;
+    color: #333;
+    text-transform: capitalize;
 }
-.emoji{
-    font-size: 9rem;
+
+.emoji {
+    font-size: 6rem;
+    margin: 10px 0;
+}
+
+.errorDisplay {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
 }
