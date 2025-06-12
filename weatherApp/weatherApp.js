@@ -1,9 +1,7 @@
+import apiKey from "./config.js";
 const weatherForm = document.querySelector(".weatherForm");
 const containeer = document.querySelector(".containeer");
 const cityInput = document.querySelector(".cityInput");
-
-
-const apiKey  = "06ee65f67f82a99b08a0ccab0ce5eb37";
 
 weatherForm.addEventListener("submit", async event =>{
     event.preventDefault();
